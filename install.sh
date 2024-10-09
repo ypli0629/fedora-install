@@ -20,7 +20,7 @@ sudo rpm-ostree install gnome-shell-extension-appindicator \
 
 # soft
 sudo rpm-ostree install autojump fcitx5-chinese-addons fcitx5-autostart \ 
-      golang neovim nodejs pnpm rustup zsh flameshot wireshark \
+      golang neovim nodejs pnpm yarnpkg rustup zsh flameshot wireshark \
       -y
 
 # gnome
