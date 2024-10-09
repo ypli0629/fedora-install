@@ -8,8 +8,8 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
 # gnome-shell
-sudo rpm-ostree install gnome-shell-extension-appindicator \ 
-      gnome-shell-extension-auto-move-windows \ 
+sudo rpm-ostree install gnome-shell-extension-appindicator \
+      gnome-shell-extension-auto-move-windows \
       gnome-shell-extension-blur-my-shell \
       gnome-shell-extension-dash-to-dock \
       gnome-shell-extension-netspeed \
@@ -19,9 +19,7 @@ sudo rpm-ostree install gnome-shell-extension-appindicator \
       -y
 
 # soft
-sudo rpm-ostree install autojump fcitx5-chinese-addons fcitx5-autostart \ 
-      golang neovim nodejs pnpm yarnpkg rustup zsh flameshot wireshark \
-      -y
+sudo rpm-ostree install autojump fcitx5-chinese-addons fcitx5-autostart golang neovim nodejs pnpm yarnpkg rustup zsh flameshot wireshark -y
 
 # gnome
 for i in $(seq 1 9); do
@@ -57,17 +55,3 @@ mkdir -p ~/Desktop/learn
 git config --global user.email "liyapeng0629@gmail.com"
 git config --global user.name "ypli0629"
 git config --global credential.helper store
-
-# zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-tee -a ~/.zshrc <<-'EOF'
-	alias szsh="source ~/.zshrc"
-	alias nzsh="nvim ~/.zshrc"
-	alias pon="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export all_proxy=socks5://127.0.0.1:7890"
-	alias poff="unset http_proxy; unset https_proxy; unset all_proxy"
-
-	export PATH=~/.local/bin:~/go/bin:~/.local/bin:$PATH
-	___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
-EOF
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https:

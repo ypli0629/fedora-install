@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # nvidia
 # echo "GSK_RENDERER=NGL" > ~/.config/environment.d/GTK4.conf
 sudo rpm-ostree install akmod-nvidia xorg-x11-drv-nvidia-cuda -y #optional if using nvidia-smi or cuda
