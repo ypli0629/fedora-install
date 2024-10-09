@@ -1,3 +1,7 @@
+sudo rpm-ostree upgrade -y
+sudo rpm-ostree install akmod-nvidia xorg-x11-drv-nvidia-cuda -y #optional if using nvidia-smi or cuda
+sudo rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1 # this might not be needed at some point when ostree systems will support the standard way to specify this.
+
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
@@ -11,9 +15,11 @@ sudo rpm-ostree install gnome-shell-extension-appindicator \
       gnome-shell-extension-unite \
       gnome-shell-extension-user-theme \
       gnome-tweaks \
+      -y
 
 sudo rpm-ostree install autojump fcitx5-chinese-addons \ 
-      go neovim nodejs pnpm rustup zsh
+      go neovim nodejs pnpm rustup zsh \
+      -y
 
 mkdir -p ~/Desktop/source
 mkdir -p ~/Desktop/work
