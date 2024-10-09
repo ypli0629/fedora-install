@@ -1,13 +1,3 @@
-mkdir -p ~/Desktop/source
-mkdir -p ~/Desktop/work
-mkdir -p ~/Desktop/caffe
-mkdir -p ~/Desktop/learn
-
-# git
-git config --global user.email "liyapeng0629@gmail.com"
-git config --global user.name "ypli0629"
-git config --global credential.helper store
-
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
@@ -24,6 +14,16 @@ sudo rpm-ostree install gnome-shell-extension-appindicator \
 
 sudo rpm-ostree install autojump fcitx5-chinese-addons \ 
       go neovim nodejs pnpm rustup zsh
+
+mkdir -p ~/Desktop/source
+mkdir -p ~/Desktop/work
+mkdir -p ~/Desktop/caffe
+mkdir -p ~/Desktop/learn
+
+# git
+git config --global user.email "liyapeng0629@gmail.com"
+git config --global user.name "ypli0629"
+git config --global credential.helper store
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 tee -a ~/.zshrc <<-'EOF'
