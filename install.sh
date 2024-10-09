@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # upgrade
-sudo rpm-ostree upgrade -y
+sudo rpm-ostree upgrade
 
 # flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
