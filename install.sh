@@ -16,6 +16,9 @@ sudo rpm-ostree install gnome-shell-extension-appindicator \
       gnome-shell-extension-unite \
       gnome-shell-extension-user-theme \
       gnome-tweaks \
+      gnome-shell-extension-workspace-indicator \
+      gnome-shell-theme-yaru \
+      gnome-shell-theme-flat-remix \
       -y
 
 # soft
