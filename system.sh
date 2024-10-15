@@ -22,4 +22,5 @@ sudo dnf install gnome-shell-extension-appindicator \
       -y
 
 # soft
-sudo dnf install autojump-zsh fcitx5-chinese-addons fcitx5-autostart golang neovim nodejs pnpm yarnpkg rustup zsh flameshot wireshark -y
+sudo dnf install autojump-zsh fcitx5-chinese-addons fcitx5-autostart golang neovim nodejs pnpm yarnpkg rustup zsh flameshot wireshark golang \
+      google-noto-sans-cjk-fonts google-noto-serif-cjk-fonts -y
