@@ -1,8 +1,5 @@
 #!/bin/bash
 
-./system.sh
-./gnome.sh
-
 # nvim
 git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim
 

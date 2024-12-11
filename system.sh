@@ -17,8 +17,8 @@ sudo dnf install gnome-shell-extension-appindicator \
       gnome-shell-extension-user-theme \
       gnome-tweaks \
       gnome-shell-extension-workspace-indicator \
-      gnome-shell-theme-yaru \
-      gnome-shell-theme-flat-remix \
+      # gnome-shell-theme-yaru \
+      # gnome-shell-theme-flat-remix \
       -y
 
 # soft
