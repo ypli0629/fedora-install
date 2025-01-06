@@ -8,6 +8,5 @@ tee -a ~/.zshrc <<-'EOF'
 	alias poff="unset http_proxy; unset https_proxy; unset all_proxy"
 
 	export PATH=~/.local/bin:~/go/bin:~/.local/bin:$PATH
-	___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
 EOF
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
