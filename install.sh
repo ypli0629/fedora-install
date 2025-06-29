@@ -1,7 +1,7 @@
 #!/bin/bash
 
-./system.sh
-./gnome.sh
+sh ./system.sh
+sh ./gnome.sh
 
 # nvim
 git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim

@@ -3,7 +3,9 @@ mkdir themes
 cd themes
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
 cd WhiteSur-gtk-theme
-./install.sh -l -N stable
+# git clone https://github.com/vinceliuice/MacTahoe-gtk-theme.git
+# cd MacTahoe-gtk-theme
+./install.sh
 cd ..
 
 # git clone https://github.com/vinceliuice/grub2-themes.git
@@ -13,6 +15,8 @@ cd ..
 
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
 cd WhiteSur-icon-theme
+# git clone https://github.com/vinceliuice/MacTahoe-icon-theme.git
+# cd MacTahoe-icon-theme
 ./install.sh -b
 cd ..
 

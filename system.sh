@@ -20,4 +20,5 @@ sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub --sy
 #       -y
 
 # soft
-sudo dnf install autojump-zsh fcitx5-chinese-addons fcitx5-autostart golang neovim nodejs pnpm yarnpkg rustup zsh flameshot wireshark -y
+sudo dnf remove google-noto-sans-cjk-vf-fonts
+sudo dnf install @c-development @development-tools google-noto-serif-cjk-fonts autojump-zsh golang neovim nodejs pnpm yarnpkg rustup zsh flameshot wireshark -y
